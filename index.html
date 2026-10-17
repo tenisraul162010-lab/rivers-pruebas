@@ -62,11 +62,20 @@
 <style data-purpose="image-crops">
     .crop-logo{background-image:url('img/foto1.png');background-size:contain;background-repeat:no-repeat;background-position:center;}
   </style>
-</head>
+<style data-purpose="hero-motion">
+    /* Movimiento lento de cámara en la foto de portada (efecto vídeo) */
+    .hero-mov { transform-origin: 60% 55%; animation: heroMov 22s ease-in-out infinite alternate; will-change: transform; }
+    @keyframes heroMov {
+      0%   { transform: scale(1.02) translate(0, 0); }
+      50%  { transform: scale(1.10) translate(-1.5%, -1%); }
+      100% { transform: scale(1.16) translate(1.5%, -2%); }
+    }
+    @media (prefers-reduced-motion: reduce) { .hero-mov { animation: none; } }
+  </style></head>
 <body class="relative overflow-x-hidden selection:bg-[#d9684c] selection:text-white">
 <div style="position:sticky;top:0;z-index:9999;background:#1f1e1e;color:#fff;text-align:center;font:600 12px/1.4 sans-serif;padding:6px 12px;letter-spacing:.05em">VERSIÓN DE PRUEBAS · Karol no ve estos cambios hasta que se publiquen</div>
 <!-- BEGIN: Navigation & Hero Section -->
-<header class="relative w-full h-[640px] md:h-[730px] bg-cover bg-no-repeat flex flex-col justify-between overflow-hidden" data-purpose="hero-header-container"><div class="absolute inset-0 w-full h-full pointer-events-none"><img src="img/foto3.jpg" alt="Diseños y Reformas River's - Reformas y Construcción en Madrid" class="w-full h-full object-cover"><div class="absolute inset-0 bg-white/40 backdrop-blur-[1px]"></div></div>
+<header class="relative w-full h-[640px] md:h-[730px] bg-cover bg-no-repeat flex flex-col justify-between overflow-hidden" data-purpose="hero-header-container"><div class="absolute inset-0 w-full h-full pointer-events-none"><img src="img/foto3.jpg" alt="Diseños y Reformas River's - Reformas y Construcción en Madrid" class="w-full h-full object-cover hero-mov"><div class="absolute inset-0 bg-white/40 backdrop-blur-[1px]"></div></div>
 <!-- Top Navigation Bar -->
 <nav aria-label="Navegación principal" class="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between z-20">
 <!-- Logo River's -->
