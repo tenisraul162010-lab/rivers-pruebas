@@ -72,6 +72,7 @@
     }
     @media (prefers-reduced-motion: reduce) { .hero-mov { animation: none; } }
   </style><link rel="stylesheet" href="css/movil.css">
+<link rel="stylesheet" href="css/antes-despues.css">
 </head>
 <body class="relative overflow-x-hidden selection:bg-[#d9684c] selection:text-white">
 <div style="position:sticky;top:0;z-index:9999;background:#1f1e1e;color:#fff;text-align:center;font:600 12px/1.4 sans-serif;padding:6px 12px;letter-spacing:.05em">VERSIÓN DE PRUEBAS · Karol no ve estos cambios hasta que se publiquen</div>
@@ -116,7 +117,6 @@
 <a class="block px-8 py-2.5 hover:text-brand-terracotta" href="reformas-integrales.html">REFORMAS INTEGRALES</a>
 <a class="block px-8 py-2.5 hover:text-brand-terracotta" href="reformas-de-bano.html">REFORMAS DE BAÑOS</a>
 <a class="block px-8 py-2.5 hover:text-brand-terracotta" href="reformas-de-cocina.html">REFORMAS DE COCINAS</a>
-<a class="text-gray-800 hover:text-brand-terracotta transition-colors" href="galeria.html">GALERÍA</a>
 <a class="block px-5 py-3 hover:text-brand-terracotta" href="galeria.html">GALERÍA</a>
 <a class="block px-5 py-3 hover:text-brand-terracotta" href="contacto.html">CONTACTO</a>
 <a class="block mx-5 mt-2 px-4 py-3 text-center bg-brand-terracotta text-white" href="presupuesto.html">PIDE PRESUPUESTO</a>
@@ -273,7 +273,26 @@
 <!-- BEGIN: Panoramic Living Room Banner -->
 <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"><div class="overflow-hidden rounded-sm shadow-sm"><img src="img/foto8.jpg" alt="Salón reformado con terraza y carpintería a medida" class="w-full h-auto max-h-[580px] object-cover"></div></div>
 <!-- END: Panoramic Living Room Banner -->
-<!-- BEGIN: Testimonials Section -->
+<!-- BEGIN: Antes y después -->
+<section class="py-20 px-6 bg-white" data-purpose="before-after">
+<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<div class="text-center md:text-left space-y-5">
+<h2 class="text-xl sm:text-2xl font-bold tracking-widest text-[#1a1a1a] uppercase leading-snug">ANTES Y DESPUÉS</h2>
+<p class="text-xs sm:text-sm text-brand-body leading-relaxed tracking-wide">Desliza la barra y mira la diferencia. Así transformamos los espacios de nuestros clientes.</p>
+<a class="inline-block px-9 py-2.5 text-[11px] font-semibold tracking-widest text-brand-terracotta border border-brand-terracotta hover:bg-brand-terracotta hover:text-white transition-colors uppercase" href="galeria.html">VER MÁS TRABAJOS</a>
+</div>
+<div class="ad" style="--pos:50%;max-width:520px">
+<img src="img/obra-bano-1.jpg" alt="Baño después de la reforma">
+<img class="ad-antes" src="img/ejemplo-antes-bano.jpg" alt="Baño antes de la reforma">
+<span class="ad-etiqueta izq">ANTES</span><span class="ad-etiqueta der">DESPUÉS</span>
+<span class="ad-ejemplo">EJEMPLO · FALTA LA FOTO REAL DEL ANTES</span>
+<div class="ad-linea"></div>
+<input type="range" min="0" max="100" value="50" aria-label="Desliza para comparar el antes y el después">
+<div class="ad-tirador" aria-hidden="true">‹›</div>
+</div>
+</div>
+</section>
+<!-- END: Antes y después --><!-- BEGIN: Testimonials Section -->
 <section class="py-24 px-6 bg-white pb-24" data-purpose="customer-reviews">
 <div class="max-w-5xl mx-auto">
 <h2 class="text-xl sm:text-2xl font-bold tracking-widest text-[#1a1a1a] uppercase text-left mb-16">
@@ -376,4 +395,5 @@
 
 <script>window.addEventListener("load",function(){if(location.hash){var el=document.querySelector(location.hash);if(el){setTimeout(function(){el.scrollIntoView();},150);}}});</script>
 <script src="js/movil.js"></script>
+<script src="js/antes-despues.js"></script>
 </body></html>

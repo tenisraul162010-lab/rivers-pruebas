@@ -108,6 +108,21 @@
 </div>
 </section>
 
+<section class="pb-16 px-6 bg-white" id="antes-despues">
+<div class="max-w-6xl mx-auto text-center">
+<h2 class="section-title">ANTES Y DESPUÉS</h2>
+<p class="text-sm text-brand-body tracking-wide mt-3 mb-8">Desliza la barra para ver el cambio.</p>
+<div class="ad" style="--pos:50%;max-width:520px">
+<img src="img/obra-bano-1.jpg" alt="Baño después de la reforma">
+<img class="ad-antes" src="img/ejemplo-antes-bano.jpg" alt="Baño antes de la reforma">
+<span class="ad-etiqueta izq">ANTES</span><span class="ad-etiqueta der">DESPUÉS</span>
+<span class="ad-ejemplo">EJEMPLO · FALTA LA FOTO REAL DEL ANTES</span>
+<div class="ad-linea"></div>
+<input type="range" min="0" max="100" value="50" aria-label="Desliza para comparar el antes y el después">
+<div class="ad-tirador" aria-hidden="true">‹›</div>
+</div>
+</div>
+</section>
 <section class="pb-20 px-6 bg-white">
 <div class="max-w-6xl mx-auto">
 <div class="flex flex-wrap justify-center gap-2" role="group" aria-label="Filtrar trabajos">
@@ -219,6 +234,9 @@
     });
   })();
 </script>
+
+<link rel="stylesheet" href="css/antes-despues.css">
+<script src="js/antes-despues.js"></script>
 <!-- BEGIN: Footer Section -->
 <footer class="bg-white border-t border-stone-200" data-purpose="page-footer" id="contacto">
 <div class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10 items-center text-center">
