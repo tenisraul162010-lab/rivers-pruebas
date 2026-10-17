@@ -1,0 +1,28 @@
+/* Ajustes solo para móvil: texto más ligero de leer, sin quitar contenido */
+@media (max-width: 767px) {
+  .prose-rivers p,
+  [data-purpose="intro-statement"] p,
+  [data-purpose="company-experience"] p,
+  [data-purpose="visual-details-showcase"] p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+  }
+  [data-purpose="intro-statement"] .space-y-5 > p + p { margin-top: 1rem; }
+
+  h1, h2, h3 { letter-spacing: 0.03em !important; }
+  .section-title { font-size: 1.3rem; line-height: 1.25; }
+
+  section.py-20, section.py-24 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  section.py-16 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+  .leer-mas-oculto { display: none; }
+  .btn-leer-mas {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    margin-top: 0.75rem; padding: 0.35rem 0;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #d9684c; background: none; border: 0; border-bottom: 1px solid #d9684c; cursor: pointer;
+  }
+}
+@media (min-width: 768px) { .btn-leer-mas { display: none; } }
